@@ -1,0 +1,324 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\OG185028\\OneDrive - NCR Corporation\\Desktop\\Ofer\\Projects\\BeMyGuest\\Be-Your-Guest\\BeMyGuest\\Client\\BeMyGuest.Client.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\OG185028\\OneDrive - NCR Corporation\\Desktop\\Ofer\\Projects\\BeMyGuest\\Be-Your-Guest\\BeMyGuest\\Client\\BeMyGuest.Client.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\OG185028\\OneDrive - NCR Corporation\\Desktop\\Ofer\\Projects\\BeMyGuest\\Be-Your-Guest\\BeMyGuest\\Client\\BeMyGuest.Client.csproj",
+        "projectName": "BeMyGuest.Client",
+        "projectPath": "C:\\Users\\OG185028\\OneDrive - NCR Corporation\\Desktop\\Ofer\\Projects\\BeMyGuest\\Be-Your-Guest\\BeMyGuest\\Client\\BeMyGuest.Client.csproj",
+        "packagesPath": "C:\\Users\\OG185028\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\OG185028\\OneDrive - NCR Corporation\\Desktop\\Ofer\\Projects\\BeMyGuest\\Be-Your-Guest\\BeMyGuest\\Client\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\OG185028\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\WinETSSimulator": {},
+          "http://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\OG185028\\OneDrive - NCR Corporation\\Desktop\\Ofer\\Projects\\BeMyGuest\\Be-Your-Guest\\BeMyGuest\\Shared\\BeMyGuest.Shared.csproj": {
+                "projectPath": "C:\\Users\\OG185028\\OneDrive - NCR Corporation\\Desktop\\Ofer\\Projects\\BeMyGuest\\Be-Your-Guest\\BeMyGuest\\Shared\\BeMyGuest.Shared.csproj"
+              },
+              "C:\\Users\\OG185028\\OneDrive - NCR Corporation\\Desktop\\Ofer\\Projects\\BeMyGuest\\Be-Your-Guest\\Client.BusinessComponents\\Client.BusinessComponents.csproj": {
+                "projectPath": "C:\\Users\\OG185028\\OneDrive - NCR Corporation\\Desktop\\Ofer\\Projects\\BeMyGuest\\Be-Your-Guest\\Client.BusinessComponents\\Client.BusinessComponents.csproj"
+              },
+              "C:\\Users\\OG185028\\OneDrive - NCR Corporation\\Desktop\\Ofer\\Projects\\BeMyGuest\\Be-Your-Guest\\Client.Model\\Client.Model.csproj": {
+                "projectPath": "C:\\Users\\OG185028\\OneDrive - NCR Corporation\\Desktop\\Ofer\\Projects\\BeMyGuest\\Be-Your-Guest\\Client.Model\\Client.Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Blazored.FluentValidation": {
+              "target": "Package",
+              "version": "[2.0.3, )"
+            },
+            "Blazored.LocalStorage": {
+              "target": "Package",
+              "version": "[4.2.0, )"
+            },
+            "Microsoft.AspNetCore.Components.Authorization": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly": {
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
+            "Microsoft.AspNetCore.SignalR": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "Microsoft.Extensions.Localization": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "MudBlazor": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
+              "version": "[6.0.4, 6.0.4]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "browser-wasm": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\Users\\OG185028\\OneDrive - NCR Corporation\\Desktop\\Ofer\\Projects\\BeMyGuest\\Be-Your-Guest\\BeMyGuest\\Shared\\BeMyGuest.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\OG185028\\OneDrive - NCR Corporation\\Desktop\\Ofer\\Projects\\BeMyGuest\\Be-Your-Guest\\BeMyGuest\\Shared\\BeMyGuest.Shared.csproj",
+        "projectName": "BeMyGuest.Shared",
+        "projectPath": "C:\\Users\\OG185028\\OneDrive - NCR Corporation\\Desktop\\Ofer\\Projects\\BeMyGuest\\Be-Your-Guest\\BeMyGuest\\Shared\\BeMyGuest.Shared.csproj",
+        "packagesPath": "C:\\Users\\OG185028\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\OG185028\\OneDrive - NCR Corporation\\Desktop\\Ofer\\Projects\\BeMyGuest\\Be-Your-Guest\\BeMyGuest\\Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\OG185028\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\WinETSSimulator": {},
+          "http://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.Authorization": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\OG185028\\OneDrive - NCR Corporation\\Desktop\\Ofer\\Projects\\BeMyGuest\\Be-Your-Guest\\Client.BusinessComponents\\Client.BusinessComponents.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\OG185028\\OneDrive - NCR Corporation\\Desktop\\Ofer\\Projects\\BeMyGuest\\Be-Your-Guest\\Client.BusinessComponents\\Client.BusinessComponents.csproj",
+        "projectName": "Client.BusinessComponents",
+        "projectPath": "C:\\Users\\OG185028\\OneDrive - NCR Corporation\\Desktop\\Ofer\\Projects\\BeMyGuest\\Be-Your-Guest\\Client.BusinessComponents\\Client.BusinessComponents.csproj",
+        "packagesPath": "C:\\Users\\OG185028\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\OG185028\\OneDrive - NCR Corporation\\Desktop\\Ofer\\Projects\\BeMyGuest\\Be-Your-Guest\\Client.BusinessComponents\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\OG185028\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\WinETSSimulator": {},
+          "http://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\OG185028\\OneDrive - NCR Corporation\\Desktop\\Ofer\\Projects\\BeMyGuest\\Be-Your-Guest\\Client.Model\\Client.Model.csproj": {
+                "projectPath": "C:\\Users\\OG185028\\OneDrive - NCR Corporation\\Desktop\\Ofer\\Projects\\BeMyGuest\\Be-Your-Guest\\Client.Model\\Client.Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Blazored.FluentValidation": {
+              "target": "Package",
+              "version": "[2.0.3, )"
+            },
+            "Microsoft.Extensions.Localization.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\OG185028\\OneDrive - NCR Corporation\\Desktop\\Ofer\\Projects\\BeMyGuest\\Be-Your-Guest\\Client.Model\\Client.Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\OG185028\\OneDrive - NCR Corporation\\Desktop\\Ofer\\Projects\\BeMyGuest\\Be-Your-Guest\\Client.Model\\Client.Model.csproj",
+        "projectName": "Client.Model",
+        "projectPath": "C:\\Users\\OG185028\\OneDrive - NCR Corporation\\Desktop\\Ofer\\Projects\\BeMyGuest\\Be-Your-Guest\\Client.Model\\Client.Model.csproj",
+        "packagesPath": "C:\\Users\\OG185028\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\OG185028\\OneDrive - NCR Corporation\\Desktop\\Ofer\\Projects\\BeMyGuest\\Be-Your-Guest\\Client.Model\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\OG185028\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\WinETSSimulator": {},
+          "http://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

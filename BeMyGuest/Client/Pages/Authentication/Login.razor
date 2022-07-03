@@ -1,0 +1,41 @@
+﻿@page "/"
+@layout MainLayout
+@inject Microsoft.Extensions.Localization.IStringLocalizer<Login> _localizer
+
+<MudStack AlignItems="AlignItems.Start" Justify="Justify.Center" Row="true">
+    <MudPaper Square="true" Outlined="true" Class="border-none pa-4 d-flex justify-space-around" Elevation="0">
+        <MudImage Width="500" Height="515" Src="images/login.png" Elevation="25" Class="rounded-lg"/>
+    </MudPaper>
+     <MudDivider Class="pa-1 ma-1" Vertical="true" FlexItem="true"  Style="height: 515px;" />
+     <MudPaper  Elevation="3" Class="pa-8 ma-2">
+        <EditForm Model="@_loginRequest" >
+            <MudGrid Style="width: 500px;">
+                <DataAnnotationsValidator />
+                <MudItem xs="12">
+                        <MudText Typo="Typo.h4">@_localizer["Title"]</MudText>
+                </MudItem>
+                <MudItem xs="12">
+                        <MudText>@_localizer["Description"]</MudText>
+                </MudItem>
+                <MudItem xs="12">
+                        <MudText>@_localizer["Don't have an account?"] <MudLink Href="/Register">@_localizer["Register here"]</MudLink></MudText>
+                </MudItem>
+                <MudItem xs="12">
+                    <MudTextField T="string" Label="@_localizer["E-mail"]" Variant="Variant.Outlined"
+                                  @bind-Value="_loginRequest.Email" For="@(() => _loginRequest.Email)" />
+                </MudItem>
+                <MudItem xs="12">
+                    <MudTextField Label="@_localizer["Password"]" Variant="Variant.Outlined"
+                                  @bind-Value="_loginRequest.Password" For="@(() => _loginRequest.Password)"
+                                  InputType="@_passwordInput" Adornment="Adornment.End" AdornmentIcon="@_passwordInputIcon" OnAdornmentClick="TogglePasswordVisibility"/>
+                </MudItem>
+                <MudItem xs="12" Class="d-flex justify-space-between align-center">
+                    <MudCheckBox T="bool" Label="@_localizer["Remember me?"]" Color="Color.Primary" Class="ml-n1"></MudCheckBox> <MudLink Href="/account/forgot-password">@_localizer["Forgot password?"]</MudLink>
+                </MudItem>
+                <MudItem xs="12" Class="d-flex justify-center">
+                    <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled"  Color="Color.Primary" Size="Size.Large" Style="width: 100%;">@_localizer["Sign In"]</MudButton>
+                </MudItem>
+            </MudGrid>
+        </EditForm>
+      </MudPaper>
+</MudStack>

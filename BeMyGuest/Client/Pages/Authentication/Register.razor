@@ -1,0 +1,89 @@
+﻿@page "/register"
+@layout MainLayout
+@inject Microsoft.Extensions.Localization.IStringLocalizer<Register> _localizer
+
+<MudStack AlignItems="AlignItems.Center" Justify="Justify.Center" Row="true">
+    <MudImage Width="500" Height="515" Src="images/register.png" Elevation="25" Class="rounded-lg"/>
+    <MudDivider Class="pa-1 ma-10" Vertical="true" FlexItem="true"  Style="height: 550px; width: 5px; color: red;" />
+    <MudPaper  Elevation="3" Class="pa-8 ma-2">
+        <EditForm Model="@_registerRequest" OnValidSubmit="SubmitAsync">
+            <FluentValidationValidator @ref="_fluentValidationValidator" />   
+            <MudGrid Style="width: 500px;">
+                <MudItem xs="12">
+                    <div class="d-flex justify-center">
+                        <MudText Typo="Typo.h4">@_localizer["Register"]</MudText>
+                    </div>
+                </MudItem>
+                <MudItem  xs="12">
+                    <div class="d-flex justify-center">
+                        <MudText>@_localizer["Already have an account?"] <MudLink Href="/">@_localizer["Sign In"]</MudLink></MudText>
+                    </div>
+                </MudItem>
+                <MudItem  xs="12" sm="6" md="6">
+                    <MudTextField For="@(() => _registerRequest.UserName)" @bind-Value="_registerRequest.UserName" Label="@_localizer["User Name"]" />
+                </MudItem>
+                <MudItem  xs="12" sm="6" md="6">
+                    <MudTextField For="@(() => _registerRequest.FirstName)" @bind-Value="_registerRequest.FirstName" Label="@_localizer["First Name"]" />
+                </MudItem>
+                <MudItem  xs="12" sm="6" md="6">
+                    <MudTextField For="@(() => _registerRequest.LastName)" @bind-Value="_registerRequest.LastName" Label="@_localizer["Last Name"]" />
+                </MudItem>
+                <MudItem  xs="12" sm="6" md="6">
+                    <MudTextField T="string" Label="@_localizer["Phone Number"]" @bind-Value="_registerRequest.PhoneNumber" For="@(() => _registerRequest.PhoneNumber)" />
+                </MudItem>
+                <MudItem  xs="12" sm="6" md="6">
+                    <MudTextField T="string" Label="@_localizer["E-mail"]" InputType="InputType.Email" @bind-Value="_registerRequest.Email" For="@(() => _registerRequest.Email)" />
+                </MudItem>
+                <MudItem  xs="12" sm="6" md="6">
+                    <MudTextField T="string"  Label="@_localizer["Confirm E-mail"]" InputType="InputType.Email" @bind-Value="_registerRequest.ConfirmEmail" For="@(() => _registerRequest.ConfirmEmail)" />
+                </MudItem>
+                <MudItem  xs="12" sm="6" md="6">
+                    <MudTextField For="@(() => _registerRequest.Password)" InputType="@_passwordInput" Adornment="Adornment.End" AdornmentIcon="@_passwordInputIcon" OnAdornmentClick="TogglePasswordVisibility" @bind-Value="_registerRequest.Password" Label="@_localizer["Password"]" />
+                </MudItem>
+                <MudItem  xs="12" sm="6" md="6">
+                    <MudTextField For="@(() => _registerRequest.ConfirmPassword)" InputType="InputType.Password" @bind-Value="_registerRequest.ConfirmPassword" Label="@_localizer["Confirm Password"]" />
+                </MudItem>
+                <MudItem  xs="12" sm="6" md="6">
+               <label  style="
+                        box-shadow: 0 2px 7px #4caf50;
+                        display: inline-flex;
+                        width: 180px;
+                        justify-content: space-around;
+                        border-radius: 2em;
+                        color: white;
+                        border:2px solid;
+                        cursor: pointer;
+                        align-items: center;
+                        padding:16px;
+                        margin: 10px;
+                        background-color: #4caf50;"         
+                       for="fileInput2">
+                    Upload Picture <MudIcon Icon="@Icons.Filled.CloudUpload"/>
+                </label>
+
+                <InputFile id="fileInput2" OnChange="UploadFiles" hidden multiple />
+                </MudItem>
+                @if (_imageToUpload != null)
+                {
+                    <MudList>
+                        @foreach (var file in _imageToUpload)
+                        {
+                            <MudListItem Icon="@Icons.Filled.AttachFile">
+                                @file.Name <code>@file.Size bytes</code>
+                                <MudFab HtmlTag="label" Color="Color.Secondary"
+                                Icon="@Icons.Filled.Clear" Size="Size.Small" OnClick="Clear"/>
+                            </MudListItem>
+                        }
+                    </MudList>
+                }
+                <MudItem  xs="12" sm="6" md="6">
+                    <MudTextField T="string" Label="@_localizer["Address"]" @bind-Value="_registerRequest.Address" For="@(() => _registerRequest.Address)" />
+                </MudItem>
+               <MudDivider FlexItem="true"  Style="height: 1px; width: 450px;" Class="pa-1 ma-3" />
+               <MudItem  xs="12" Class="d-flex justify-center pa-2 ma-2">
+                    <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Disabled="@(!Validated)" Color="Color.Primary" Size="Size.Large" Style="width: 100%;">@_localizer["Register"]</MudButton>
+                </MudItem>
+            </MudGrid>
+        </EditForm>
+        </MudPaper>
+</MudStack>

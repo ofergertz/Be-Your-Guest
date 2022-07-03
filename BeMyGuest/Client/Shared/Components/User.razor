@@ -1,0 +1,24 @@
+﻿@namespace BeMyGuest.Client.Shared.Components
+
+<MudCard Elevation="0" Square="true">
+    <MudCardHeader>
+        <CardHeaderAvatar>
+           @* @if (string.IsNullOrEmpty(ImageDataUrl))
+            {*@
+                <MudAvatar Color="Color.Secondary">O</MudAvatar>
+            @*}*@
+@*            else
+            {
+                <MudAvatar Image="@ImageDataUrl" Style="height:50px; width:50px;"> </MudAvatar>
+            }*@
+        </CardHeaderAvatar>
+        <CardHeaderContent>
+            <MudText Typo="Typo.body2">@*@FirstName @SecondName*@Ofer Gertz</MudText>
+            <MudText Typo="Typo.caption">@*@Email*@ofer1g38@gmail.com</MudText>
+        </CardHeaderContent>
+    </MudCardHeader>
+</MudCard>
+
+@code {
+
+}
