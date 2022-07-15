@@ -1,10 +1,5 @@
-﻿using Client.Model.Requests.Identity;
-using System;
-using System.Collections.Generic;
+﻿using BeMyGuest.Shared.Model.Requests.Identity;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Client.BusinessComponents.Requests.Identity
 {

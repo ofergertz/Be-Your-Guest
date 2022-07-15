@@ -26,7 +26,9 @@
     <PackageReference Include="Microsoft.AspNetCore.Components.Authorization" Version="6.0.6" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.4" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.4" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.AspNetCore.Cryptography.KeyDerivation" Version="6.0.6" />
     <PackageReference Include="Microsoft.AspNetCore.SignalR" Version="1.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Identity.Stores" Version="6.0.6" />
     <PackageReference Include="Microsoft.Extensions.Localization" Version="6.0.6" />
     <PackageReference Include="MudBlazor" Version="6.0.10" />
   </ItemGroup>
@@ -34,6 +36,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Client.BusinessComponents\Client.BusinessComponents.csproj" />
     <ProjectReference Include="..\..\Client.Model\Client.Model.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\Infrastructure.csproj" />
     <ProjectReference Include="..\Shared\BeMyGuest.Shared.csproj" />
   </ItemGroup>
 

@@ -1,4 +1,4 @@
-﻿using Client.Model.Requests.Identity;
+﻿using BeMyGuest.Shared.Model.Requests.Identity;
 using System.ComponentModel.DataAnnotations;
 
 namespace Client.BusinessComponents.Requests.Identity
@@ -37,6 +37,9 @@ namespace Client.BusinessComponents.Requests.Identity
         public string PhoneNumber { get; set; }
 
         public bool ActivateUser { get; set; } = false;
-        public bool AutoConfirmEmail { get; set; } = false;
+
+        public string ProfilePicture { get; set; }
+
+        public List<string> Proffesion { get; set; } = new List<string>();
     }
 }

@@ -8,7 +8,7 @@
     </MudPaper>
      <MudDivider Class="pa-1 ma-1" Vertical="true" FlexItem="true"  Style="height: 515px;" />
      <MudPaper  Elevation="3" Class="pa-8 ma-2">
-        <EditForm Model="@_loginRequest" >
+        <EditForm Model="@_loginRequest" OnValidSubmit="SubmitAsync" >
             <MudGrid Style="width: 500px;">
                 <DataAnnotationsValidator />
                 <MudItem xs="12">

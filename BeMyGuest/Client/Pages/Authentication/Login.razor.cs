@@ -1,12 +1,16 @@
 ﻿using Client.BusinessComponents.Requests.Identity;
-using Client.Model.Requests;
+using BeMyGuest.Shared.Model.Requests;
 using MudBlazor;
+using Infrastructure.Model.Services;
+using System.Net.Http.Json;
+using BeMyGuest.Shared.Model.Requests.Identity;
 
 namespace BeMyGuest.Client.Pages.Authentication
 {
     public partial class Login
     {
         private LoginRequest _loginRequest = new();
+
         public Login() { }
 
         private bool _passwordVisibility;
@@ -28,9 +32,12 @@ namespace BeMyGuest.Client.Pages.Authentication
                 _passwordInput = InputType.Text;
             }
         }
-        //public Login(ILoginRequest loginRequest)
-        //{
-        //    _loginRequest = loginRequest;
-        //}
+
+        private async Task SubmitAsync()
+        {
+            var result = await _authenticationManager.Login(_loginRequest);
+            if(result.Succeeded)
+                _navigationManager.NavigateTo("/Register");
+        }
     }
 }

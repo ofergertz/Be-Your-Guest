@@ -1,5 +1,8 @@
 ﻿@using System.Net.Http
 @using System.Net.Http.Json
+@using BeMyGuest.Shared.Model.DAL.Conectivity.Roles
+@using BeMyGuest.Shared.Model.Requests.Identity
+@using Infrastructure.Model.Services
 @using Microsoft.AspNetCore.Components.Forms
 @using Microsoft.AspNetCore.Components.Routing
 @using Microsoft.AspNetCore.Components.Web
@@ -10,5 +13,15 @@
 @using BeMyGuest.Client.Shared
 @using MudBlazor
 @using Blazored.FluentValidation;
+@using Microsoft.AspNetCore.Identity;
+@using global::Client.Model.Responses.Identity
+@using Microsoft.AspNetCore.Cryptography.KeyDerivation;
+@using System.Security.Cryptography;
 
+@inject HttpClient _httpClient
+@inject ILoginRequest _loginRequests
+@inject IRegisterRequest _loginRequests
 @inject IDialogService _dialogService
+@inject IAuthenticationManager  _authenticationManager
+@inject NavigationManager _navigationManager
+@inject IRolesManager _rolesManager

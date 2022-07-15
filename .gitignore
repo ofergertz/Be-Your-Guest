@@ -10,3 +10,5 @@ bld/
 [Oo]bj/
 [Ll]og/
 .vs/
+/BeMyGuest/Server/BeMyGuest.Server.csproj.user
+/DAL.Conectivity/Migrations

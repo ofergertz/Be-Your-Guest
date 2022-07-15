@@ -40,7 +40,8 @@ namespace Client.BusinessComponents.Validators.Requests.Identity
                 .Equal(request => request.Password).WithMessage(x => _localizer["Passwords don't match"]);
             RuleFor(request => request.ConfirmEmail)
                 .Must(x => !string.IsNullOrWhiteSpace(x)).WithMessage(x => _localizer["Email Confirmation is required!"])
-                .Equal(request => request.ConfirmEmail).WithMessage(x => _localizer["Emails don't match"]);
-        }
+                .Equal(request => request.Email).WithMessage(x => _localizer["Emails don't match"]);
+            RuleFor(request => request.PhoneNumber)
+                .Must(x => !string.IsNullOrWhiteSpace(x)).WithMessage(x => _localizer["Phone Number is required!"]);        }
     }
 }
